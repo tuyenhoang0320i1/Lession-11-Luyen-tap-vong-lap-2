@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3: In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau</title>
+</head>
+<body>
+<script>
+    let Triangle = +prompt("Enter a side: ");
+    for (a = 1; a <= 2; a++) {debugger
+        for (i = 1; i <= Triangle; i++) {
+            for (j = 1; j <= i; j++) {
+                // console.log(j);
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+        for (i = Triangle; i >= 1; i--) {
+            for (j = 1; j <= i; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

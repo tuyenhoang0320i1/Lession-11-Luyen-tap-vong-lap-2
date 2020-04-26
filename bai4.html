@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let widthRect = +prompt("Enter width : ");
+    let heightRect = +prompt("Enter height: ");
+    for (i = 1; i <= heightRect; i++) {
+        for (j = 1; j <= widthRect; j++) {
+            if ((i == 1) || (j == 1) || (i == heightRect) || (j == widthRect)) {
+                document.write(j);
+            } else {
+                document.write(" &nbsp;");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>
